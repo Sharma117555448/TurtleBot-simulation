@@ -34,7 +34,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 #include <iostream>
 #include <memory>
 #include <sstream>
-#include "turtlebot-simulations/bot.h"
+#include "turtlebot-simulations/bot.hpp"
 
 /**
  * @brief      main function
