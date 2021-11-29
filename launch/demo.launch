@@ -2,11 +2,11 @@
 	<arg name="enable_ros_bag" default="false" doc="enable_ros_bag"/>
 
 	<node pkg="rosbag"
-	name="record"
+	name="record_talker"
 	type="record"
 	output="screen"
 	required="true" 
-	args="--duration=40 -a -O $(find turtlebot_tutorials)/results/turtlebot_walker.bag"
+	args="--duration=40 -a -O $(find turtlebot-simulations)/results/rosbag.bag"
 	if="$(arg enable_ros_bag)"/>
 
 	<arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
