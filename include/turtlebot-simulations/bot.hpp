@@ -28,8 +28,8 @@ OTHER DEALINGS IN THE SOFTWARE.
  * This program will run the walker node for the turtlebot
  */
 
-#ifndef TURTLEBOT_SIMULATIONS_BOT_HPP_
-#define INCLUDE_BOT_HPP_
+#ifndef INCLUDE_TURTLEBOT_SIMULATIONS_BOT_HPP_
+#define TURTLEBOT_SIMULATIONS_BOT_HPP_
 #include <sstream>
 #include <string>
 #include "ros/ros.h"

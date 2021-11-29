@@ -1,0 +1,6 @@
+./src/turtlebot-simulations/include/turtlebot-simulations/bot.hpp:0:  No #ifndef header guard found, suggested CPP variable is: CATKIN_WS_SRC_TURTLEBOT_SIMULATIONS_INCLUDE_TURTLEBOT_SIMULATIONS_BOT_HPP_  [build/header_guard] [5]
+./src/turtlebot-simulations/src/turtlebot_talker.cpp:64:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+Done processing ./src/turtlebot-simulations/include/turtlebot-simulations/bot.hpp
+Done processing ./src/turtlebot-simulations/src/bot.cpp
+Done processing ./src/turtlebot-simulations/src/turtlebot_talker.cpp
+Total errors found: 2

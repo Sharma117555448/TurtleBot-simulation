@@ -27,12 +27,14 @@ OTHER DEALINGS IN THE SOFTWARE.
  * @date 2021-11-28
  */
 
+
 #include <iostream>
-#include <ros/console.h>
+#include "ros/console.h"
 #include "geometry_msgs/Twist.h"
 #include "std_msgs/String.h"
-#include "sensor_msgs/LaserScan.h"
 #include "turtlebot-simulations/bot.hpp"
+#include "sensor_msgs/LaserScan.h"
+
 
 /**
  * @brief      Constructs the object.
