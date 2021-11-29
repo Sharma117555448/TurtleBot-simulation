@@ -34,7 +34,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 #include <iostream>
 #include <memory>
 #include <sstream>
-#include "turtlebot-simulations/bot.hpp"
+#include "turtlebot-simulations/bot.h"
 
 /**
  * @brief      main function
@@ -50,7 +50,8 @@ int main(int argc, char* argv[]) {
   ros::NodeHandle nh;
 
 // Declaring the Twist publisher
-  ros::Publisher chatter_pub = nh.advertise < geometry_msgs::Twist > ("cmd_vel", 1000);
+  ros::Publisher chatter_pub = nh.advertise < geometry_msgs::Twist
+                                                  > ("cmd_vel", 1000);
 
   // Set up the publisher rate to 10 Hz
   ros::Rate loop_rate(10);
