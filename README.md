@@ -40,6 +40,10 @@ cd ~/catkin_ws/
 catkin_make
 source devel/setup.bash
 ```
+Kill the existiing Gazebo servers
+```
+killall gzserver
+```
 Set the environment variable for the turtlebot's model
 ```
 echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
@@ -58,7 +62,7 @@ roscore
 cd ~/catkin_ws
 source devel/setup.bash
 catkin_make
-roslaunch roslaunch turtlebot-simulations demo.launch
+roslaunch turtlebot-simulations demo.launch
 ```
 ## 3. Run roslaunch without rosbag recording
 The records are saved in results as rosbag.bag
@@ -66,7 +70,7 @@ The records are saved in results as rosbag.bag
 cd ~/catkin_ws
 source devel/setup.bash
 catkin_make
-roslaunch roslaunch turtlebot-simulations demo.launch nable_ros_bag:=true
+roslaunch turtlebot-simulations demo.launch nable_ros_bag:=true
 ```
 ## 4. To examine the rosbag
 ```
@@ -88,6 +92,5 @@ Results are stored in `./results/cpplint.txt`
 ```
 cpplint $( find . -name \*.hpp -or -name \*.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./docs/" -e "^./results" -e "^./lib/") > results/cpplint.txt 2>&1
 ```
-
 # Reference
 http://wiki.ros.org/
