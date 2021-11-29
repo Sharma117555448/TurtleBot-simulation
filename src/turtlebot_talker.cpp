@@ -50,15 +50,14 @@ int main(int argc, char* argv[]) {
   ros::NodeHandle nh;
 
 // Declaring the Twist publisher
-  ros::Publisher chatter_pub = n.advertise < geometry_msgs::Twist
-      > ("cmd_vel", 1000);
+  ros::Publisher chatter_pub = nh.advertise < geometry_msgs::Twist > ("cmd_vel", 1000);
 
-  // Setting a loop rate
+  // Set up the publisher rate to 10 Hz
   ros::Rate loop_rate(10);
-  // Declaring a controller 
-  Controller controller(nh);
+  // Declaring a controller
+  Bot bot(nh);
   // start the roomba like turtlebot
-  controller.turtlebotInitiate(n, chatter_pub, loop_rate);
+  bot.turtlebotInitiate(nh, chatter_pub, loop_rate);
 
   return 0;
 }

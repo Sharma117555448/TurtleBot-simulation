@@ -59,7 +59,7 @@ class Bot {
 
  public:
   // Declaring the new constructor
-  explicit Bot (ros::NodeHandle);
+  explicit Bot(ros::NodeHandle);
   // Function to start the turtlebot motion in the environment
   void turtlebotInitiate(ros::NodeHandle, ros::Publisher, ros::Rate);
   // Function to keep turning while the robot is clear of any obstacles
