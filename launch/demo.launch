@@ -15,7 +15,7 @@
 	<arg name="z_pos" default="0.0"/>
 
 	<include file="$(find gazebo_ros)/launch/empty_world.launch">
-		<arg name="world_name" value="$(find turtlebot_tutorials)/worlds/mycustomttworld.world"/>
+		<arg name="world_name" value="$(find turtlebot-simulations)/worlds/mycustomttworld.world"/>
 		<arg name="paused" value="false"/>
 		<arg name="use_sim_time" value="true"/>
 		<arg name="gui" value="true"/>
@@ -27,6 +27,6 @@
 
 	<node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
 
-	<node pkg="turtlebot_tutorials" name="turtlebot_talker" type="turtlebot_talker"></node>
+	<node pkg="turtlebot-simulations" name="turtlebot_talker" type="turtlebot_talker"></node>
 
 </launch>

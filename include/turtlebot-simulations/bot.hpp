@@ -27,6 +27,7 @@ OTHER DEALINGS IN THE SOFTWARE.
  * @date 2021-11-28
  * This program will run the walker node for the turtlebot
  */
+#pragma once
 
 #ifndef INCLUDE_TURTLEBOT_SIMULATIONS_BOT_HPP_
 #define TURTLEBOT_SIMULATIONS_BOT_HPP_
